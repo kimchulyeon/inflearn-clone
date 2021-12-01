@@ -1,0 +1,55 @@
+/* COMMON */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  margin: 0 auto;
+  color: #3f464d;
+}
+.inner {
+  width: 100%;
+  height: 100%;
+  /* 가운데 정렬 */
+  margin: 0 auto;
+  /* background-color: yellow; */
+}
+/* 화면의 너비가 1200px보다 커질 때 inner가 더이상 커지지 않게 */
+/* @media only screen and (min-width: 1200px) {
+  .inner {
+    max-width: 1200px;
+  }
+} */
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  z-index: 3;
+}
+header .inner {
+  max-width: 1200px;
+}
+header .inner .head-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .inner .head-container a.title {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 50px;
+  color: #3f464d;
+  text-decoration: none;
+}
+header .inner .head-container div.description {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 100px;
+}
